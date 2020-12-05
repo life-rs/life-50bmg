@@ -1,0 +1,7 @@
+{
+    "Id": "M82A1Ammo",
+    "ParentId": "Barrett",
+    "Icon": "/files/handbook/icon_ammo.png",
+    "Color": "",
+    "Order": "2"
+}
