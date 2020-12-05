@@ -3,7 +3,7 @@
 */
 
 exports.mod = (mod_data) => {
-    logger.logInfo("[MOD] LifeMechanisms");
+    logger.logInfo("[MOD] 50bmg");
     //testing 
     let ModFolderName = `${mod_data.author}-${mod_data.name}-${mod_data.version}`;
     let ModFolders = mod_data.categ;
@@ -20,30 +20,26 @@ exports.mod = (mod_data) => {
     // you can replace it with reading folder names and file names from directories should be easier to maintain then we will not need folders and filenames made by hand
     // to read all files/folders in specified directory use global.json.readDir(path)
     // a PathResolver should fix the wrong pathing problem :) aka file not found thing
-    for(let folder of ModFolders)
-    {
+    for (let folder of ModFolders) {
         tDataBase[folder] = {};
-        for(let file of ModFileNames)
-        {
+        for (let file of ModFileNames) {
             let fileData = global.fileIO.readParsed(PathResolver(`user/mods/${ModFolderName}/${folder}/${file}.json`));
-            
+
             tDataBase[folder][file] = fileData;
         }
     }
     // process "files/locales/en"
-    for(let item in tDataBase["test/handbook"])
-    {
+    for (let item in tDataBase["test/handbook"]) {
         let itemData = tDataBase["test/handbook"][item];
         locale_en.handbook[item] = itemData;
     }
-        // process "files/templates"
-    for(let item in tDataBase["test/templates"])
-    {
+    // process "files/templates"
+    for (let item in tDataBase["test/templates"]) {
         let itemData = tDataBase["test/templates"][item];
         templates.data.Categories.push(itemData);
     }
-    
+
     fileIO.write(PathResolver('user/cache/locale_en.json'), locale_en, true);
     fileIO.write(PathResolver('user/cache/templates.json'), templates, true);
-    logger.logSuccess("[MOD] LifeMechanisms; Applied");
+    logger.logSuccess("[MOD] 50bmg categories; Applied");
 }
