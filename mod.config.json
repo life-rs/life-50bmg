@@ -1,0 +1,39 @@
+{
+    "name": "AMR",
+    "author": "life",
+    "description": "Anti-Material Rifle",
+    "license": "MIT",
+    "version": "1.0.0",
+    "dependencies": [],
+    "autoupdate": true,
+    "checkUpdateUrl": "https://raw.githubusercontent.com/life-rs/life-AMR/main/updater.json",
+    "src":{
+      "src/modloader.js": "CacheModLoad",
+      "src/categories.js": "CacheModLoad"
+    },
+    "folders": [
+    "files/assort/ragfair",
+    "files/items",
+    "files/locales/en",
+    "files/templates"
+    ],
+    "filenames": [
+      "AMR_Receiver",
+      "AMR",
+      "AMR_ExtBar",
+      "AMR_Mag",
+      "AMR_ShortBar",
+      "AMR_StandardBar",
+      "AM_Lead",
+      "AM_Bang"
+    ],
+    "categ": [
+      "test/handbook",
+      "test/templates"
+    ],
+    "things": [
+      "CustomAMR",
+      "AMRParts",
+      "CustomAmmo"
+    ]
+  }
