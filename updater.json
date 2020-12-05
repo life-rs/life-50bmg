@@ -1,9 +1,9 @@
 {
-    "name": "AMR",
+    "name": "50bmg",
     "author": "life",
     "version": "1.0.0",
     "forceDowngrade": false,
-    "downloadUpdateUrl": "https://github.com/life-rs/life-AMR/archive/main.zip",
+    "downloadUpdateUrl": "https://github.com/life-rs/life-50bmg/archive/main.zip",
     "excludeFromUpdate": [
         "README.md"
     ]
