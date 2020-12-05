@@ -17,7 +17,7 @@
         "CreditsPrice": 820,
         "ItemSound": "ammo_singleround",
         "Prefab": {
-            "path": "assets/content/items/ammo/patrons/patron_127x108.bundle",
+            "path": "assets/content/items/ammo/patrons/patron_762x51_m62.bundle",
             "rcid": ""
         },
         "UsePrefab": {
