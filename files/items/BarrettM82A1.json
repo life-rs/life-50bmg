@@ -128,7 +128,7 @@
         "CantRemoveFromSlotsDuringRaid": [],
         "weapClass": "sniperRifle",
         "weapUseType": "primary",
-        "ammoCaliber": "Caliber762x51",
+        "ammoCaliber": "Caliber12.7x99",
         "Durability": 100,
         "MaxDurability": 100,
         "OperatingResource": 3000,
